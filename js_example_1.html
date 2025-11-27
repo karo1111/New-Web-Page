@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <title>title</title>
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width,  initial-scale=1.0" />
+        <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+      <script>
+        // const arra=[
+        //    {
+        //     'one':22,
+        //     'two':'fff',
+        //     'three':444
+        //    },
+        //    {
+        //     'a':'e',
+        //     'b':5
+        //    }
+        // ];
+        // document.write(arra, ['one','two']+'<br>');
+        //  document.writeln(-4/0+'<br>');
+
+   let arr = [4,11,3,77,55];
+   let num=arr[0];
+    
+
+     function Link(str){
+        let res = "";
+        for(let i=str.length-1;i>=0;i--){
+           res +=str[i]; 
+        }  
+        return res; 
+     }
+     document.write(Link('habrban'));
+  
+  
+    let str = "welcome start";
+    document.write(str.charAt(1)+'<br><br>');
+    document.write(['one', 'two', 'three', 'four'].map(value=>value.length)+'<br>'+'<br>');
+    
+  //  let data=  [
+  //  { name:'olo',id:'1'},
+  //  {
+  //   name:'bolbo',id:3
+  //  }
+  //   ];
+  //   data.every(function(item,i,test){
+  //     return item ===test[0];
+  //   });
+   
+
+// let ar = { };
+//  Object.defineProperty(ar, {value:'bbb'});
+// document.writeln(ar.bbb+'<br>');
+
+
+
+var person = { name: "John", surname: "Doe"};
+Object.defineProperty(person, 'fullName', {
+get: function () {
+return this.name + " " + this.surname;
+},
+set: function (value) {
+[this.name, this.surname] = value.split(" ");
+}
+});
+document.writeln(person.fullName+'<br><br>');
+person.surname='alo bolo'+'<br>';
+document.writeln(person.fullName);
+person.fullName='Hill';
+document.writeln(person.name+'<br>');
+
+ 
+
+
+      </script>
+
+    </body>
+</html>
